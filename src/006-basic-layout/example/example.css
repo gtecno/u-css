@@ -1,5 +1,20 @@
 /* Practice Layout */
 
-.trash{
-	color: black;
+body,
+html {
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+}
+
+h3 {
+  font-size: 1.5em;
+  margin-bottom: 30px;
+}
+
+.wrapper-section{
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 20px;
 }
