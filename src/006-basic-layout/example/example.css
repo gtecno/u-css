@@ -30,6 +30,9 @@ h3 {
  padding: 20px 30px;
 }
 
+
+
+
 /**Exercise one**/
 
 .exerciseOne {
@@ -39,7 +42,7 @@ h3 {
 
 .exerciseOne .header,
 .exerciseOne .footer {
-   background: #D24F2E;
+   background: #d24f2e;
    overflow: hidden;
    zoom: 1;
    clear: left;
@@ -47,14 +50,49 @@ h3 {
 .exerciseOne .sidebar{
    float: left;
    position: relative;
-   width: 200px;
-   margin-right: -200px;
+   width: 250px;
+   margin-right: -250px;
    background: #8cd0d2;
 }
 
 .exerciseOne .principal{
-   border-left: 200px solid #8cd0d2;
+   border-left: 250px solid #8cd0d2;
    padding: 20px;
+}
+
+
+
+/**  Exercise two - used flex **/
+
+.exerciseTwo {
+  display: flex;
+  flex-direction: column;
+}
+
+.exerciseTwo .headerTwo,
+.exerciseTwo .footerTwo {
+  background: #d24f2e;
+}
+
+.exerciseTwo .sidebarTwo {
+  width: 250px;
+  background: #8cd0d2;
+}
+
+.exerciseTwo .wrapper-principal {
+  display: flex;
+  flex-direction: row;
+}
+
+.exerciseTwo .principalTwo {
+  padding: 20px;
+  flex: 2;
+  background-color: #ffd0c4;
+}
+
+.sidebar ul li a i,
+.sidebarTwo ul li a i{
+ margin: 15px 15px 0 0;
 }
 
 
