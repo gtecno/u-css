@@ -18,3 +18,43 @@ h3 {
   max-width: 1200px;
   padding: 20px;
 }
+
+
+.list-inline {
+    padding: 12px 20px;
+    margin: 0px;
+}
+
+.list-inline li {
+  display: inline;
+ padding: 20px 30px;
+}
+
+/**Exercise one**/
+
+.exerciseOne {
+   margin: 20px auto;
+   background: #ffd0c4;
+}
+
+.exerciseOne .header,
+.exerciseOne .footer {
+   background: #D24F2E;
+   overflow: hidden;
+   zoom: 1;
+   clear: left;
+}
+.exerciseOne .sidebar{
+   float: left;
+   position: relative;
+   width: 200px;
+   margin-right: -200px;
+   background: #8cd0d2;
+}
+
+.exerciseOne .principal{
+   border-left: 200px solid #8cd0d2;
+   padding: 20px;
+}
+
+
