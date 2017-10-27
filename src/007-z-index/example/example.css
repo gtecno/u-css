@@ -45,11 +45,13 @@ position: relative;
 border-top: 1px solid red;
 }
 
+
 .wrapper-content-three {
    background-color: #D3D2D1;
    padding: 1% 1% 1% 10%;
    margin-left: -10%;
 }
+
 
 .wrapper-two {
   background-color: rgba(102, 123, 134, 0.3);
@@ -62,9 +64,10 @@ border-top: 1px solid red;
   z-index: 1;
 }
 
+
 .wrapper-three {
+ box-sizing: border-box;
   background-color: #DFE180;
-  box-sizing: border-box;
   color: #8C8D57;
   line-height: 1;
   padding: 5%;
