@@ -8,46 +8,43 @@ html {
   padding: 0;
 }
 
-h3 {
+bl-h3 {
   font-size: 1.5em;
   margin-bottom: 30px;
 }
 
-.wrapper-section{
+.bl-wrapper-section{
   margin: 0 auto;
   max-width: 1200px;
   padding: 20px;
 }
 
 
-.list-inline {
+.bl-list-inline {
     padding: 12px 20px;
     margin: 0px;
 }
 
-.list-inline li {
+.bl-list-inline li {
   display: inline;
  padding: 20px 30px;
 }
 
-
-
-
 /**Exercise one**/
 
-.exerciseOne {
+.bl-exercise-one {
    margin: 20px auto;
    background: #ffd0c4;
 }
 
-.exerciseOne .header,
-.exerciseOne .footer {
+.bl-exercise-one .bl-header,
+.bl-exercise-one .bl-footer {
    background: #d24f2e;
    overflow: hidden;
    zoom: 1;
    clear: left;
 }
-.exerciseOne .sidebar{
+.bl-exercise-one .bl-sidebar{
    float: left;
    position: relative;
    width: 250px;
@@ -55,43 +52,41 @@ h3 {
    background: #8cd0d2;
 }
 
-.exerciseOne .principal{
+.bl-exercise-one .bl-principal{
    border-left: 250px solid #8cd0d2;
    padding: 20px;
 }
 
-
-
 /**  Exercise two - used flex **/
 
-.exerciseTwo {
+.bl-exercise-two {
   display: flex;
   flex-direction: column;
 }
 
-.exerciseTwo .headerTwo,
-.exerciseTwo .footerTwo {
+.bl-exercise-two .bl-header-two,
+.bl-exercise-two .bl-footer-two {
   background: #d24f2e;
 }
 
-.exerciseTwo .sidebarTwo {
+.bl-exercise-two .bl-sidebar-two {
   width: 250px;
   background: #8cd0d2;
 }
 
-.exerciseTwo .wrapper-principal {
+.bl-exercise-two .bl-wrapper-principal {
   display: flex;
   flex-direction: row;
 }
 
-.exerciseTwo .principalTwo {
+.bl-exercise-two .bl-principal-two {
   padding: 20px;
   flex: 2;
   background-color: #ffd0c4;
 }
 
-.sidebar ul li a i,
-.sidebarTwo ul li a i{
+.bl-sidebar ul li a i,
+.bl-sidebar-two ul li a i{
  margin: 15px 15px 0 0;
 }
 
