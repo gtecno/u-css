@@ -9,94 +9,89 @@ html {
   padding: 0;
 }
 
-.containerDisplay {
+.container-display {
    background-color: #E8E8E8;
    margin: 0 auto;
    max-width: 1400px;
 }
 
-/**** header ****/
-.headerDisplay {
+/**** header display ****/
+.header-display {
    background-color: #E8E8E8;
 	 padding: 15px;
 }
 
-headerDisplay h1 {
+.header-display h1 {
 	color: #676767;
 	font-size: 24px;
   line-height: 20px;
 	 margin: 0;
 }
 
-/**** nav ****/
-.navDisplay {
+/**** nav dispaly ****/
+.nav-display {
   background-color: #DCDCDC;
 	padding: 15px;
 }
 
-.navDisplay ul {
+.nav-display ul {
   list-style:none;
 	margin: 0;
 	padding: 0;
 }
 
-.navDisplay li {
+.nav-display li {
 	line-height: 15px;
 	display: inline;
-}
-
-
-.navDisplay li:not(:last-child) {
 	padding-right: 15px;
-	margin-right: 15px;
+  margin-right: 15px;
 }
 
-/*** TableSection ***/
-.tableSection {
+/*** Table section ***/
+.table-section-two-column {
   display: table;
 }
 
-.tableSection article {
+.table-section-two-column article {
   display: table-cell;
   width: 50%;
   vertical-align: middle;
 }
 
 
-/*** TableDisplay ***/
+/*** Table display ***/
 
-.tableDisplay{
+.table-section-display{
   margin: 25px 0;
   background-color: #DCDCDC;
   display: table;
   width: 100%;
 }
 
-.table-rowDisplay{
+.table-row-display{
   display: table-row;
   text-align: center;
 }
 
-.table-cellDisplay,
-.table-headDisplay {
-  display:table-cell;
+.table-cell-display,
+.table-head-display {
+  display: table-cell;
   border: 1px solid #676767;
   padding: 1.5em;
 }
 
-.table-headDisplay {
+.table-head-display {
   font-weight:bold;
 }
 
 
-/*** GaleryDisplay ***/
-
-.galleryDisplay {
+/*** Galery display ***/
+.gallery-display {
    margin:15px;
    padding: .25em;
 }
 
-.galleryDisplay div{
+.gallery-display div{
     border: 2px solid #19A96C;
     box-sizing: border-box;
     display: inline-block;
