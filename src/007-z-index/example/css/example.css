@@ -10,12 +10,12 @@ html, body {
   position: relative;
 }
 
-
-.wrapper{
+.zi-wrapper-page-content{
 position: relative;
 }
 
-.wrapper-one {
+/** Block light blue **/
+.zi-wrapper-one-block-lightblue {
   background-color: #76C4D1;
   box-sizing: border-box;
   margin: 5%;
@@ -24,36 +24,37 @@ position: relative;
   overflow: auto
 }
 
-.wrapper-content-first {
+.zi-wrapper-content-first {
   padding-left: 5%;
   width: 60%;
 }
 
-
-.wrapper-content-two .wrapper-content-three {
+.zi-wrapper-content-two .zi-wrapper-content-three {
   width: 60%;
 }
 
-
-
-.wrapper-content-tittle {
+.zi-wrapper-content-tittle {
   font-size: 2em;
   font-weight: 500;
 }
 
-.wrapper-content-two hr {
-border-top: 1px solid red;
+.zi-wrapper-content-two-section{
+ margin-right: 100px;
 }
 
+.zi-wrapper-content-two-section hr {
+  border-top: 1px solid red;
+}
 
-.wrapper-content-three {
+.zi-wrapper-content-three-block-section {
    background-color: #D3D2D1;
    padding: 1% 1% 1% 10%;
    margin-left: -10%;
+   margin-right: 100px;
 }
 
-
-.wrapper-two {
+/** Block light gray z index: value 1 **/
+.zi-wrapper-two-block-lightgray {
   background-color: rgba(102, 123, 134, 0.3);
   position: fixed;
   right: 0;
@@ -64,13 +65,13 @@ border-top: 1px solid red;
   z-index: 1;
 }
 
-
-.wrapper-three {
+/** Block yellow z index: value 2 **/
+.zi-wrapper-three-block-yellow {
  box-sizing: border-box;
   background-color: #DFE180;
   color: #8C8D57;
   line-height: 1;
-  padding: 5%;
+  padding: 2%;
   position: absolute;
   margin-top: 5%;
   right: 5%;
@@ -79,5 +80,20 @@ border-top: 1px solid red;
   z-index: 2 ;
 }
 
+.zi-wrapper-three-block-yellow ul {
+   list-style:none;
+   margin:0;
+   padding:0;
+}
+
+.zi-wrapper-three-block-yellow li {
+  padding: 1% 0;
+  font-weight: 100;
+}
+
+.yellow-wrapper .title-list {
+  font-size: 2em;
+  padding-bottom: 5%;
+}
 
 
