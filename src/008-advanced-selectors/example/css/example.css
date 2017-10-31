@@ -24,7 +24,7 @@ h2 {
 /** Page containes**/
 .as-page-container {
    margin: 0 auto;
-   max-width: 1000px;
+   max-width: 1200px;
 }
 
 .as-page-container > aside {
@@ -34,10 +34,9 @@ h2 {
 
 .as-page-container > section {
     display: inline-block;
-    width calc(100% - 350px);
     vertical-align : top;
+    width: calc(100% - 320px);
 }
-
 
 /** header **/
 .as-header {
@@ -51,17 +50,72 @@ h2 {
 }
 
 
-/*** Main and principal content***/
+/*** Main and principal content - images ***/
 
 .as-photo-model-images{
   display: flex;
-  flex-wrap:wrap;
-  padding: 25px;
+  flex-wrap: wrap;
+  padding: 15px;
 }
 
 .as-photo-model-image{
-
+  position: relative;
 }
+
+.as-photo-model-image p{
+    margin: auto;
+}
+
+.as-photo-model-image-wrapper {
+  box-sizing: border-box;
+  margin-right: 20px;
+  position: relative;
+  overflow: hidden;
+  height: 320px;
+  width: 240px;
+}
+
+.as-photo-model-image-wrapper img {
+  width: 100%;
+  max-width: 100%;
+  -moz-transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.as-photo-model-image-wrapper:hover img {
+  -moz-transform: scale(1.5);
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+}
+
+
+/***   List Result and Botton ***/
+.as-top-section-list-result {
+     margin: 30px 5px;
+}
+
+.as-top-section-list-result span {
+     margin-left: 10px;
+}
+
+.as-top-section-list-result div {
+    float: right;
+    margin-right: 12%;
+}
+
+.as-top-section-list-result  button {
+    background-color: transparent;
+    border: 2px inset #ebebeb;
+    height: 50px:
+    width:  55px;
+    margin-left: 8px;
+}
+
+.as-top-section-list-result  button:first-child {
+    background-color: #000;
+}
+
 
 
 /** footer **/
