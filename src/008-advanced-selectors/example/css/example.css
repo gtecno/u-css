@@ -9,28 +9,59 @@ html {
   padding: 0;
 }
 
-/** header **/
+h2 {
+  border-bottom: 2px solid #ebebeb;
+  font-size: 0.9em;
+  font-weight: normal;
+  letter-spacing: 2px;
+  line-height: 40px;
+  margin: 15px 0;
+  padding-bottom: 15px;
+  text-transform: uppercase;
+}
 
-as-header{
-  border-bottom: 2px sollid #ebebeb;
+
+/** Page containes**/
+.as-page-container {
+   margin: 0 auto;
+   max-width: 1000px;
+}
+
+.as-page-container > aside {
+  display: inline-block;
+  width: 270px;
+}
+
+.as-page-container > section {
+    display: inline-block;
+    width calc(100% - 350px);
+    vertical-align : top;
+}
+
+
+/** header **/
+.as-header {
+  border-bottom: 2px solid #ebebeb;
   color: #000;
-  font-size: 1.2em;
+  font-size: 0.9em;
   line-height: 100px;
   height: 100px;
   text-align: center;
   text-transform: uppercase;
 }
 
-.as-page-container {
-   margin: 0 auto;
-   max-width: 1200px;
+
+/*** Main and principal content***/
+
+.as-photo-model-images{
+  display: flex;
+  flex-wrap:wrap;
+  padding: 25px;
 }
 
-/*
-.as {
+.as-photo-model-image{
 
 }
-*/
 
 
 /** footer **/
