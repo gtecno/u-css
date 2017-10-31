@@ -9,7 +9,10 @@ html {
   padding: 0;
 }
 
+/** header **/
+
 as-header{
+  border-bottom: 2px sollid #ebebeb;
   color: #000;
   font-size: 1.2em;
   line-height: 100px;
@@ -21,4 +24,27 @@ as-header{
 .as-page-container {
    margin: 0 auto;
    max-width: 1200px;
+}
+
+/*
+.as {
+
+}
+*/
+
+
+/** footer **/
+
+footer {
+  background-color: #787878;
+  color: #fff;
+  height: 60px;
+  line-height: 60px;
+  margin: 0 -20px -20px;
+  padding: 20px;
+}
+
+footer div {
+  margin: 0 auto;
+  max-width: 1200px;
 }
