@@ -64,6 +64,7 @@ p::first-letter {
 .fi-title {
   font-size: 2em;
   line-height: 2.5;
+  font-family: 'raleway-thin'
 }
 
 
@@ -91,9 +92,14 @@ position: relative;
   width: 60%;
 }
 
-.fi-wrapper-content-tittle {
-  font-size: 2em;
-  font-weight: 500;
+.fi-wrapper-content-first .fi-wrapper-content-tittle {
+  font-size: 3em;
+  font-family: 'raleway-bold';
+}
+
+.fi-wrapper-content-first .fi-icons-font-awesome{
+   text-align: right;
+   margin-right: 15px;
 }
 
 .fi-wrapper-content-two-section{
@@ -139,6 +145,7 @@ position: relative;
    padding: 1% 1% 1% 10%;
    margin-left: -10%;
    margin-right: 100px;
+   color: black;
 }
 
 /** Block light gray z index: value 1 **/
@@ -155,31 +162,52 @@ position: relative;
 
 /** Block yellow z index: value 2 **/
 .fi-wrapper-three-block-yellow {
- box-sizing: border-box;
   background-color: #DFE180;
+  box-sizing: border-box;
   color: #8C8D57;
   line-height: 1;
-  padding: 2%;
+  padding: 5%;
   position: absolute;
   margin-top: 5%;
   right: 5%;
   top: 0;
   width: 30%;
-  z-index: 2 ;
+  z-index: 2;
+}
+
+
+.fi-wrapper-three-block-yellow  .fi-title-list {
+  font-size: 25px;
+  padding-bottom: 5%;
 }
 
 .fi-wrapper-three-block-yellow ul {
-   list-style:none;
    margin:0;
    padding:0;
 }
 
 .fi-wrapper-three-block-yellow li {
-  padding: 1% 0;
+  padding: 2% 0;
   font-weight: 100;
 }
 
-.yellow-wrapper .title-list {
-  font-size: 2em;
-  padding-bottom: 5%;
+.fi-wrapper-three-block-yellow li:before {
+ content: "\27BA ";
+  padding-right: 8px;
+}
+
+.fi-wrapper-three-block-yellow li::after {
+   counter-increment: section;
+   content: " " counters(section,".");
+ }
+
+
+.fi-wrapper-three-block-yellow li:nth-child(2n+3)::after {
+    content: "- using 'em' ";
+    font-family: 'raleway-thin';
+}
+
+.fi-wrapper-three-block-yellow li:nth-child(even)::after {
+    content: "- using 'pt' ";
+    font-family: 'raleway-bold';
 }
