@@ -138,3 +138,16 @@ textarea {
 
 
 
+@media (max-width: 1200px) {
+  .sb-lyl-form-contact-us{
+    width: 80% !important;
+  }
+}
+
+@media (max-width: 500px) {
+  .sb-lyl-form-contact-us div {
+    width: 100%;
+  }
+}
+
+}
