@@ -130,8 +130,8 @@ html {
 /*Create an article with 9 notes, the pair have to be rotate 4deg and the odd -6deg. The hover should scale the note 1.25.*/
 
 .tta-notes-wrapper {
-   width: calc(100% - 400px);
-   overflow: auto;
+   width: 850px;
+   float: left;
    background-color: #ede8e8;
 }
 
@@ -209,17 +209,34 @@ html {
   padding: 15px 30px;
 }
 
-.tta-buttons-animations button:hover {
+.tta-buttons-animations ul li:nth-child(odd) button:hover {
  animation: buttons-scale 2s ease-in-out forwards;
 }
 
+.tta-buttons-animations ul li:nth-child(even) button:hover {
+ animation: buttons-scale2 2s ease-in-out forwards;
+}
 
 @keyframes buttons-scale {
-    0% { transform: scale(1)};
-   30% {transform: scale(1.03,0.98)};
-   60% {transform: scale(0.99,1.04)};
-   80% {transform: scale(1.05,0.95)};
-   85% {transform: scale(1.02,0.97)};
-   90% {transform: scale(0.98,1.03)};
-   95%,100% {transform: scale(1)};
+    0% { transform: scale(1);}
+   30% {transform: scale(1.03,0.98);}
+   40% {transform: scale(0.97,1.02);}
+   50% {transform: scale(0.95,1.05);}
+   60% {transform: scale(0.99,1.04);}
+   70% {transform: scale(0.96,1.01);}
+   77% {transform: scale(1.01,0.96);}
+   80% {transform: scale(1.05,0.95);}
+   85% {transform: scale(1.02,0.97);}
+   90% {transform: scale(0.98,1.03);}
+   95%,100% {transform: scale(1);}
+}
+
+@keyframes buttons-scale2 {
+    0% {transform: scale(0.95,1.05);}
+   30% {transform: scale(1.02,0.97);}
+   40% {transform: scale(0.97,1.02);}
+   50% {transform: scale(1);}
+   80% {transform: scale(1.05,0.95);}
+   90% {transform: scale(0.98,1.03);}
+   95%,100% {transform: scale(0.95,1.05);}
 }
