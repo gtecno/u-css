@@ -6,14 +6,15 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width">
 
-    <!-- Ignore this, it's for the header --> 
+    <!-- Ignore this, it's for the header -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
     <link href="../../app.css" rel="stylesheet" type="text/css">
 
     <!-- Import App Css file -->
-    <link href="./example.css" rel="stylesheet" type="text/css">
-    
+    <link href="./css/reset.css" rel="stylesheet" type="text/css">
+    <link href="./css/example.css" rel="stylesheet" type="text/css">
+
   </head>
   <body>
   	<!-- Always shows a header, even in smaller screens. -->
@@ -32,6 +33,50 @@
       <main class="mdl-layout__content">
         <div class="page-content">
          <!-- Practice Content Goes Here -->
+          <section class="tta-container">
+            <!--Create a title animated to change opacity from 1 to 0, duration 60s and be infinite using @keyframes.-->
+            <h1 class="tta-title-opacity"> Lorem ipsum dolor sit amet </h1>
+
+            <div class="tta-wrapper-content">
+              <section class="tta-list-animals-cards">
+                <ul>
+                  <li>
+                    <img src="./images/wolf.jpg" alt="Wolf">
+                    <div class="tta-animal-card-info">
+                      <h3>WOLF</h3>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                      <a href title="Wolf">More Info</a>
+                    </div>
+                  </li>
+                  <li>
+                    <img src="./images/tiger.jpg" alt="Tiger">
+                    <div class="tta-animal-card-info">
+                      <h3>TIGER</h3>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                      <a href title="Tiger">More Info</a>
+                    </div>
+                  </li>
+                  <li>
+                    <img src="./images/eagle.jpg" alt="Eagle">
+                    <div class="tta-animal-card-info">
+                      <h3>EAGLE</h3>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                      <a href title="Eagle">More Info</a>
+                    </div>
+                  </li>
+                </ul>
+              </section>
+
+              <aside class="">
+
+              </aside>
+
+              <article class="">
+
+              </article>
+            </div>
+          </section>
+
         </div>
       </main>
     </div>

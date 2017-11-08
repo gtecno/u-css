@@ -1,0 +1,129 @@
+/* Practice - 013 - Transform, Transition and Animations */
+
+body,
+html {
+  color: #d1caca;
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+}
+
+.tta-container{
+  margin: 0 20px;
+  font-family: sans-serif;
+  max-width: 100%;
+}
+
+.tta-wrapper-content {
+  margin: 0 30px;
+  max-width: 1200px;
+}
+
+/*Create a title animated to change opacity from 1 to 0, duration 60s and be infinite using @keyframes.*/
+
+.tta-title-opacity {
+  color: #f35626;
+  font-size: 3em;
+  text-align: center;
+  margin-bottom: 40px;
+  animation: title-animation 60s linear infinite;
+}
+
+
+@keyframes title-animation {
+   0%  { opacity: 1; }
+   25% { opacity: .75; }
+   50% { opacity: .5; }
+   75% { opacity: .25; }
+  100% { opacity: 0; }
+}
+
+
+/**Create a list of cards, this cards are going to be initial rotateY 30deg and hover will rotateY 0deg.**/
+.tta-list-animals-cards{
+   width: 100%;
+   float: left;
+   background-color: #c8c8c8;
+   box-sizing: border-box;
+   padding: 25px 20px;
+}
+
+
+.tta-list-animals-cards ul{
+   list-style:none;
+   margin: 15px 50px 0;
+   height: 600px;
+}
+
+.tta-list-animals-cards ul li {
+  display: inline;
+  float:left;
+  perspective: 500px;
+}
+
+
+.tta-list-animals-cards li img {
+   float: left;
+   margin-right:15px;
+   width: 300px;
+   border:10px solid #fff;
+   transform: rotateY(30deg);
+   box-shadow:0 6px 12px #888;
+   transition: transform 1s;
+   margin-top: 15px;
+
+}
+
+
+.tta-animal-card-info {
+   width: 240px;
+   height: 180px;
+   background-color: #cecccc;
+   border: 10px solid #fff;
+   transform: rotateY(30deg);
+   transition: transform 1s;
+   position: absolute;
+   bottom: 0;
+   padding: 10px;
+   margin: 50px 45px 0 50px;
+}
+
+.tta-animal-card-info h3{
+  color: #6b0707;
+  font-size:1.2em;
+   font-family:Times;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.tta-animal-card-info p{
+   padding: 10px 10px 30px 10px;
+   color:#6d6c6c;
+   text-align: justify;
+}
+
+.tta-animal-card-info a{
+   background-color: #6b0707;
+   color: #fff;
+   text-align: center;
+   margin: 0 auto;
+   border-radius: 6px;
+   width:100px;
+   height: 30px;
+   display: block;
+   text-decoration: none;
+   padding: 5px 0 0;
+}
+
+.tta-list-animals-cards li:hover img,
+.tta-list-animals-cards li:hover .tta-animal-card-info {
+     transform: rotateY(0deg);
+}
+
+.tta-list-animals-cards li:hover .tta-animal-card-info {
+       margin: 0 0 0 20px;
+}
+
+
+
