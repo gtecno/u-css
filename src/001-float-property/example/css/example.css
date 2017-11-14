@@ -1,4 +1,4 @@
-/* Practice Layout */
+/* Practice float-property */
 
 
 body,
@@ -10,28 +10,29 @@ html {
     padding: 0;
 }
 
-.tittles {
+.fp-tittles {
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
 }
 
+
 /** wrap  **/
-.wrapper {
+.fp-wrapper {
   background-color: #E8E8E8;
 	margin: 0 auto;
 	max-width: 1000px;
 }
 
 /** header  **/
-.header-title {
+.fp-header-title {
 	background-color: #E8E8E8;
   box-sizing: border-box;
 	height: 62px;
   padding: 0 15px;
 }
 
-.header-title h1 {
+.fp-header-title h1 {
 	color: #787878;
 	font-size: 1.5em;
 	line-height: 65px;
@@ -40,72 +41,74 @@ html {
 }
 
 /** nav  **/
-.navigation {
+.fp-navigation {
   background-color: #DCDCDC;
 	height: 15px;
 	padding: 15px;
 }
 
-.navigation ul {
+.fp-navigation ul {
   list-style: none;
 	margin:0;
 	padding:0;
 }
 
-.navigation li {
+.fp-navigation li {
 	float: left;
 	line-height: 17px;
   margin-right: 15px;
   padding-right: 15px;
 }
 
-.navigation a {
+.fp-navigation a {
    color: rgba(29, 28, 28, 0.5);
    font-weight: 550;
 }
 
 /** article  **/
-.top-article {
+.fp-top-article {
   background-color: #C9C9C9;
   box-sizing: border-box;
 	clear: both;
-	float:left;
+	float:right;
 	padding: 15px;
-	width: calc(100% - 400px);
+	width: calc(100% - 350px);
+	text-align : justify;
 }
 
-.top-article h2 {
+.fp-top-article h2 {
 	font-size: 1.5em;
 	margin: 0;
   padding-bottom: 15px;
 }
 
-.top-article img {
-	float: left;
+.fp-top-article img {
+	float: right;
 	margin-right: 15px;
 }
 
 @media(max-width: 800px) {
-	.top-article {
+	.fp-top-article {
 		width: 100%;
 	}
 
-  .top-article img {
+  .fp-top-article img {
     clear: both;
     width: 100%;
   }
 }
 
 /** sidebar  **/
-.sidebar-column {
+.fp-sidebar-column {
   background-color: #E7E7E7;
   box-sizing: border-box;
-	float: right;
+	float: left;
   padding: 15px;
-	width: 350px;
+	width: 300px;
+	text-align : justify;
 }
 
-.sidebar-column input{
+.fp-sidebar-column input{
   border: none;
   border-radius: 5px;
 	display: block;
@@ -113,7 +116,7 @@ html {
   margin-bottom: 20px;
 	width: 100%;
 }
-.sidebar-column ul {
+.fp-sidebar-column ul {
    list-style: none;
    margin-left: -30px;
    margin-right: 5px;
@@ -121,39 +124,90 @@ html {
 }
 
 @media (max-width: 700px) {
-	.sidebar-column {
+	.fp-sidebar-column {
     clear: both;
-    float: left;
+    float: right;
 		width: 100%;
 	}
 }
 
-/** gallery  **/
-.gallery {
+/** fp-gallery  **/
+.fp-gallery {
   background-color: #F5F5F5;
 	clear: both;
 	overflow: auto;
 	padding: 15px;
 }
 
-.gallery h2 {
+.fp-gallery h2 {
 	font-size: 1.5em;
 	margin: 0;
 }
 
-.gallery ul {
-  list-style:none;
+.fp-gallery ul {
+  list-style: none;
 	margin:0;
 	padding:0;
 }
 
-.gallery li {
+.fp-gallery li {
   float: left;
 	margin: 15px;
 	padding: 15px;
 }
 
-.gallery li a {
+.fp-gallery li a {
    list-style:none;
 }
+
+
+
+/* first-letter */
+.fp-first-letter:first-letter {
+  float: left;
+  font-size: 4em;
+  text-transform: uppercase;
+  margin: 16px 10px 16px 0;
+}
+
+.fp-footer-section div{
+    height: 50px;
+}
+
+.fp-footer-section p:not(.fp-last-text)::first-letter {
+  float: left;
+  font-size: 3em;
+  text-transform: uppercase;
+  margin: 12px
+}
+
+.fp-footer-section img {
+  width: 60px;
+  height: 60px;
+  float: left;
+}
+.fp-footer-section img:last-child {
+  height: 100px;
+  float: right;
+  margin: 20px;
+}
+
+.fp-footer-section div {
+  margin: 10px 20px 0 20px;
+}
+
+.fp-footer-section div:last-child {
+  height :150px;
+  margin:0;
+  border: 2px solid green;
+}
+
+.fp-footer-section div:last-child p {
+  float: left;
+  width: 850px;
+   margin: 20px;
+}
+
+
+
 
