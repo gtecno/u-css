@@ -15,130 +15,141 @@ h5 {
   max-width: calc(100% - 350px);
 }
 
-.page-container {
-   margin: 0px;
-   max-width: 1200px  ;
+.nm-page-container {
+  margin: 0 auto;
+  max-width: 1200px;
 }
 
-.page-container h3 {
+.nm-page-container h3 {
   border-bottom: 1px solid #D84723;
   font-size: 1.3em;
   line-height: 40px;
   margin-bottom: 50px;
 }
 
-.content  {
+.nm-content  {
    overflow: auto;
    padding: 20px;
    margin-bottom:40px;
 }
 
-.first-container-columns {
+.nm-first-container-columns {
    background-color: rgba(210, 234, 244, 0.7);
 }
 
-.second-container-table {
+.nm-second-container-table {
    background-color: rgba(210, 234, 244, 0.6);
 }
 
-.third-container-footer {
+.nm-third-container-footer {
    background-color: rgba(210, 234, 244, 0.5);
 }
 
 /**First Exercise**/
-.content-first-column {
+.nm-content-first-column {
 	 float: left;
 	 margin-right: -320px;
 	 width: 100%;
 }
 
-.content-first-column p {
+.nm-content-first-column p {
    margin-right: 350px;
 }
 
-.sidebar-second-column {
+.nm-sidebar-second-column {
 	 float: left;
 	 width: 250px;
 }
 
-.sidebar-second-column h5 {
+.nm-sidebar-second-column h5 {
    margin-left: 40px;
 }
 
-.sidebar-second-column ul {
+.nm-sidebar-second-column ul {
    list-style: none;
    margin-left: 100px;
    border-left: 2px solid #fff
 }
 
-.sidebar-second-column ul li {
+.nm-sidebar-second-column ul li {
     list-style: none;
     margin-left: 20px;
     font-size: 14px;
+    width: 120px;
+    margin-bottom: 25px;
+}
+
+.nm-sidebar-second-column ul li a{
+
+
+}
+.nm-sidebar-second-column ul li  i {
+    margin-right: 20px;
+
 }
 
 /**Second Exercise**/
-.column-list {
+.nm-column-list {
     list-style: none;
     text-align: center;
 }
 
-.column-list li {
+.nm-column-list li {
     border-bottom: 1px solid #ddd;
     line-height: 2em;
      width: 100px;
 }
 
-.title-column {
+.nm-title-column {
     font-weight: 600;
     padding-bottom: 10px;
     text-transform: uppercase;
 }
-.column-one {
+.nm-column-one {
     margin-left: 0;
 }
 
-.column-two {
+.nm-column-two {
     margin-left: 100px;
 }
 
-.column-three {
+.nm-column-three {
     margin-left: 200px;
 }
 
-.top-column {
+.nm-top-column {
    margin-top: -9em;
 }
 
 
 /**Third Exercise**/
 
-.wrapper {
+.nm-wrapper {
    min-height: 100%;
    margin-bottom: -20px;
 }
 
-.wrapper p {
+.nm-wrapper p {
    text-align: justify;
    text-justify: inter-word;
 }
 
-.wrapper button {
+.nm-wrapper button {
    margin-top: 30px;
    margin-bottom: 45px;
 }
 
-.style-sticky-footer {
+.nm-style-sticky-footer {
  background-color: #FF5733;
  color: #FFF;
 }
 
-.content-sticky-footer {
+.nm-content-sticky-footer {
     padding: 12px 20px;
     margin: 0px;
 }
 
-.content-sticky-footer li {
+.nm-content-sticky-footer li {
  display: inline;
  padding: 20px 30px 0px 0px;
 }
