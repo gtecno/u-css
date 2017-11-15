@@ -12,7 +12,7 @@ html {
 .container-display {
    background-color: #E8E8E8;
    margin: 0 auto;
-   max-width: 1400px;
+   max-width: 1200px;
 }
 
 /**** header display ****/
@@ -92,12 +92,11 @@ html {
 }
 
 .gallery-display div{
-    border: 2px solid #19A96C;
+    border: 2px solid #FE2E64;
     box-sizing: border-box;
     display: inline-block;
-    height: 90px;
-    width: 180px;
-    margin: 15px;
-    text-align: center;
+    margin: 1px;
+    text-align: justify;
+    width: 370px;
 }
 
