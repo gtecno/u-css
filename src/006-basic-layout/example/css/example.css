@@ -1,0 +1,135 @@
+/* Practice Layout */
+
+body,
+html {
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+}
+
+bl-h3 {
+  font-size: 1.5em;
+  margin-bottom: 30px;
+}
+
+.bl-wrapper-section{
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 20px;
+}
+
+
+.bl-list-inline {
+    padding: 12px 20px;
+    margin: 0px;
+}
+
+.bl-list-inline li {
+  display: inline;
+ padding: 20px 30px;
+}
+
+/**Exercise one**/
+
+.bl-exercise-one {
+   margin: 20px auto;
+   background: #ffd0c4;
+}
+
+.bl-exercise-one .bl-header,
+.bl-exercise-one .bl-footer {
+   background: #d24f2e;
+   overflow: hidden;
+   zoom: 1;
+   clear: left;
+}
+.bl-exercise-one .bl-sidebar{
+   float: left;
+   position: relative;
+   width: 250px;
+   margin-right: -250px;
+   background: #8cd0d2;
+}
+
+.bl-exercise-one .bl-principal{
+   border-left: 250px solid #8cd0d2;
+   padding: 20px;
+}
+
+ .bl-principal p,
+ .bl-principal-two p {
+   width: 100px;
+   white-space: nowrap;
+   overflow: hidden;
+   text-overflow: ellipsis;
+   margin: 0;
+}
+
+
+.bl-principal-block {
+   margin-top: 20px;
+   width: 100%;
+   display: flex;
+   flex-wrap: wrap;
+}
+
+.bl-principal-block div{
+    background-color: #8cd0d2;
+    width: 210px;
+    height: 210px;
+    border: 1px solid #d24f2e;
+}
+
+/**  Exercise two - used flex **/
+
+.bl-exercise-two {
+  display: flex;
+  flex-direction: column;
+}
+
+.bl-exercise-two .bl-header-two,
+.bl-exercise-two .bl-footer-two {
+  background: #d24f2e;
+}
+
+.bl-exercise-two .bl-sidebar-two {
+  width: 250px;
+  background: #8cd0d2;
+}
+
+.bl-exercise-two .bl-wrapper-principal {
+  display: flex;
+  flex-direction: row;
+}
+
+.bl-exercise-two .bl-principal-two {
+  padding: 20px;
+  flex: 2;
+  background-color: #ffd0c4;
+}
+
+.bl-principal-two-block {
+   margin-top: 20px;
+   width: 100%;
+   display: flex;
+   flex-wrap: wrap;
+}
+
+.bl-principal-two-block  div{
+    background-color: #8cd0d2;
+    width: 110px;
+    height: 220px;
+    border: 1px solid #d24f2e;
+}
+
+.bl-principal-two-block  div:nth-child(odd){
+    height: 330px;
+}
+
+.bl-sidebar ul li a i,
+.bl-sidebar-two ul li a i{
+ margin: 15px 15px 0 0;
+}
+
+

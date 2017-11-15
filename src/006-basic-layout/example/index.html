@@ -1,40 +1,177 @@
 <!doctype html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>006 - Basic Layout</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width">
+<head>
+  <meta charset="utf-8">
+  <title>006 - Basic Layout</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width">
 
-    <!-- Ignore this, it's for the header --> 
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
-    <link href="../../app.css" rel="stylesheet" type="text/css">
+  <!-- Ignore this, it's for the header -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+  <link href="../../app.css" rel="stylesheet" type="text/css">
 
-    <!-- Import App Css file -->
-    <link href="./example.css" rel="stylesheet" type="text/css">
-    
-  </head>
-  <body>
-  	<!-- Always shows a header, even in smaller screens. -->
-    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
-      <header class="mdl-layout__header">
-        <a aria-expanded="false" role="button" tabindex="0" class="mdl-layout__drawer-button" href="/">
-          <i class="material-icons">home</i>
-        </a>
-        <div class="mdl-layout__header-row">
-          <!-- Title -->
-          <span class="mdl-layout-title">006 - Basic Layout</span>
-          <!-- Add spacer, to align navigation to the right -->
-          <div class="mdl-layout-spacer"></div>
-        </div>
-      </header>
-      <main class="mdl-layout__content">
-        <div class="page-content">
-         <!-- Practice Content Goes Here -->
-        </div>
-      </main>
+  <!-- Import App Css file -->
+  <link href="./css/example.css" rel="stylesheet" type="text/css">
+
+</head>
+<body>
+<!-- Always shows a header, even in smaller screens. -->
+<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+  <header class="mdl-layout__header">
+    <a aria-expanded="false" role="button" tabindex="0" class="mdl-layout__drawer-button" href="/">
+      <i class="material-icons">home</i>
+    </a>
+    <div class="mdl-layout__header-row">
+      <!-- Title -->
+      <span class="mdl-layout-title">006 - Basic Layout</span>
+      <!-- Add spacer, to align navigation to the right -->
+      <div class="mdl-layout-spacer"></div>
     </div>
+  </header>
+  <main class="mdl-layout__content">
+    <div class="page-content">
+      <!-- Practice Content Goes Here -->
+      <section class="bl-wrapper-section">
+        <h3> First Exercise - Using Equal Heigh Columns </h3>
+        <div class="bl-exercise-one">
+          <!--Header-->
+          <div class="bl-header">
+            <ul class="bl-list-inline">
+              <li>
+                <spam>Home</spam>
+              </li>
+              <li>
+                <spam>About</spam>
+              </li>
+              <li>
+                <spam>Contact Us</spam>
+              </li>
+            </ul>
+          </div>
 
-  </body>
+          <!--Nav-->
+          <div class="bl-sidebar">
+            <ul>
+              <li class="mdl-list__item">
+                <a><i class="material-icons mdl-list__item-icon">home</i>Home</a>
+              </li>
+              <li class="mdl-list__item">
+                <a><i class="material-icons mdl-list__item-icon">description</i>About</a>
+              </li>
+              <li class="mdl-list__item">
+                <a><i class="material-icons mdl-list__item-icon">email</i>Contact Us</a>
+              </li>
+            </ul>
+          </div>
+
+          <!--principal-->
+          <div class="bl-principal">
+            <p>Lorem ipsum Lorem ipsum</p>
+            <p>Lorem ipsum Lorem ipsum</p>
+            <p>Lorem ipsum Lorem ipsum</p>
+            <p>Lorem ipsum Lorem ipsum</p>
+            <p>Lorem ipsum Lorem ipsum</p>
+            <p>Lorem ipsum Lorem ipsum</p>
+            <p>Lorem ipsum Lorem ipsum</p>
+
+            <section class="bl-principal-block">
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+            </section>
+
+          </div>
+
+          <!--footer-->
+          <div class="bl-footer">
+            <ul class="bl-list-inline">
+              <li>
+                <span> Talos Digital </span>
+              </li>
+              <li>
+                <span> Contact Us </span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <h3> Second Exercise - Using Flex</h3>
+        <div class="bl-exercise-two">
+
+          <div class="bl-header-two">
+            <ul class="bl-list-inline">
+              <li>
+                <spam>Home</spam>
+              </li>
+              <li>
+                <spam>About</spam>
+              </li>
+              <li>
+                <spam>Contact Us</spam>
+              </li>
+            </ul>
+          </div>
+
+          <div class="bl-wrapper-principal">
+            <div class="bl-sidebar-two">
+              <ul>
+                <li class="mdl-list__item">
+                  <a><i class="material-icons mdl-list__item-icon">home</i>Home</a>
+                </li>
+                <li class="mdl-list__item">
+                  <a><i class="material-icons mdl-list__item-icon">description</i>About</a>
+                </li>
+                <li class="mdl-list__item">
+                  <a><i class="material-icons mdl-list__item-icon">email</i>Contact Us</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="bl-principal-two">
+              <p>Lorem ipsum Lorem ipsum</p>
+              <p>Lorem ipsum Lorem ipsum</p>
+              <p>Lorem ipsum Lorem ipsum</p>
+              <p>Lorem ipsum Lorem ipsum</p>
+              <p>Lorem ipsum Lorem ipsum</p>
+              <p>Lorem ipsum Lorem ipsum</p>
+              <p>Lorem ipsum Lorem ipsum</p>
+
+              <section class="bl-principal-two-block">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+              </section>
+
+            </div>
+          </div>
+
+          <div class="bl-footer-two">
+            <ul class="bl-list-inline">
+              <li>
+                <span> Talos Digital </span>
+              </li>
+              <li>
+                <span> Contact Us </span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+    </div>
+  </main>
+</div>
+
+</body>
 </html>
