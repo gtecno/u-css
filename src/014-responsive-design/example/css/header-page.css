@@ -1,0 +1,172 @@
+/* Practice Responsive Design and Media Queries */
+
+/*========================================
+              Mobil First  - header
+  ========================================*/
+
+
+ /* General */
+ nav.rd-mq-navbar-scroll {
+   background-color: #e91e63;
+   box-shadow: 0 2px 2px 0 rgba(0,0,0,.14),
+               0 3px 1px -2px rgba(0,0,0,.2),
+               0 1px 5px 0 rgba(0,0,0,.12);
+   top: 0;
+ }
+
+ nav.rd-mq-navbar-no-scroll {
+   background-color: transparent;
+   box-shadow: none;
+   top: 64px;
+ }
+
+ .rd-mq-effect {
+   background: linear-gradient(to bottom,rgba(0,0,0,.5) 0,transparent 100%);
+   position: absolute;
+   width: 100%;
+   height: 200px;
+   left: 0;
+   top: 0;
+   z-index: 3;
+ }
+
+.rd-mq-section {
+  background-image: url(../images/backgrounds/bg1.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  height: 200px;
+  text-align: center;
+  width: 100%;
+  position: relative;
+  filter: blur(3px);
+}
+
+
+
+
+/* Nav - menu */
+
+.rd-mq-navbar {
+  background-color: transparent;
+  box-sizing: border-box;
+  color: #fff;
+  display: flex;
+  position: fixed;
+  transition-duration: .2s;
+  width: 100%;
+  z-index: 4;
+}
+
+.rd-mq-navbar a {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.rd-mq-navbar .rd-mq-logo i,
+.rd-mq-navbar .rd-mq-responsive-icon i {
+    cursor: pointer;
+    font-size: 3em;
+    padding: 10px 20px;
+}
+
+.rd-mq-navbar #rd_mq_responsive_menu li {
+  cursor: pointer;
+  padding: 20px;
+}
+
+.rd-mq-navbar #rd_mq_responsive_menu li:first-child i {
+  cursor: pointer;
+  opacity: 0.5;
+  position: absolute;
+  right: 20px;
+}
+
+.rd-mq-navbar #rd_mq_responsive_menu li:not(:first-child):hover {
+  background-color: #e0e0e0;
+}
+
+.rd-mq-navbar #rd_mq_hamburger_menu_toggle,
+.rd-mq-navbar #rd_mq_menu {
+  display: none;
+}
+
+.rd-mq-navbar #rd_mq_hamburger_menu_toggle:checked + #rd_mq_responsive_menu {
+  width: 240px;
+}
+
+
+/* Responsive Nav */
+
+.rd-mq-navbar #rd_mq_responsive_menu {
+    background-color: #fafafa;
+    box-sizing: border-box;
+    color: #424242;
+    height: 100%;
+    left: 0;
+    max-height: 100%;
+    position: fixed;
+    overflow: visible;
+    overflow-y: auto;
+    top: 0;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    width: 0;
+    z-index: 5;
+}
+
+.rd-mq-navbar #rd_mq_responsive_menu a {
+     color: #757575;
+}
+
+ /* Media Queries */
+
+  /* Small devices (320px and up)  */
+  @media (min-width: 320px) {
+     nav.rd-mq-navbar-scroll {
+         background-color: #448aff;
+       }
+     }
+
+  /* Medium devices (tablets, 768px and up) */
+  @media (min-width: 768px) {
+    .rd-mq-navbar {
+      padding: 40px;
+    }
+
+    .rd-mq-navbar .rd-mq-responsive-icon,
+    .rd-mq-navbar #rd_mq_responsive_menu{
+      display: none;
+    }
+
+    .rd-mq-navbar #rd_mq_menu {
+      display: flex;
+      flex-grow: 1;
+      justify-content: flex-end;
+    }
+
+    .rd-mq-navbar #rd_mq_menu li {
+      padding: 20px;
+    }
+
+    nav.rd-mq-navbar-scroll {
+      background-color: #6600cc;
+    }
+  }
+
+  /* Large devices (desktops, 992px and up) */
+  @media (min-width: 992px) {
+    nav.rd-mq-navbar-scroll {
+         background-color: #ff6600;
+     }
+   }
+
+  /* Extra large devices (large desktops, 1200px and up)*/
+  @media (min-width: 1200px) {
+     nav.rd-mq-navbar-scroll {
+         background-color: #e91e63;
+     }
+  }
