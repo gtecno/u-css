@@ -1,0 +1,34 @@
+/* Practice Responsive Design and Media Queries */
+
+
+.rd-mq-breadcrumbs {
+  display: flex;
+  margin: 40px 0;
+  padding: 20px 0;
+}
+
+
+.rd-mq-breadcrumbs-list  ol li {
+  display: inline;
+}
+
+
+.rd-mq-breadcrumbs-list ol li:not(:first-child)::before {
+  content: ' / ';
+}
+
+.rd-mq-breadcrumbs-list ol li  a{
+  color: rgba(18,72,210,.7);
+  cursor: pointer;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.rd-mq-breadcrumbs-list ol li:not(:last-child) a:hover{
+  color:#088A29 ;
+}
+
+.rd-mq-breadcrumbs-list ol li:last-child  a{
+  cursor: default;
+  opacity: .6;
+}
