@@ -1,0 +1,154 @@
+/* Practice: Responsive Design and Media Queries */
+
+.rd-mq-footer {
+  background-color: #e91e63;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  padding: 50px;
+}
+
+.rd-mq-footer a {
+  color: #fff;
+}
+
+.rd-mq-footer ul.rd-mq-links-footer {
+  display: flex;
+  flex-direction: row;
+}
+
+.rd-mq-footer ul.rd-mq-links-footer li {
+  height: 65px;
+  line-height: 65px;
+}
+
+.rd-mq-footer ul.rd-mq-links-footer li:not(:last-child){
+  padding-right: 10px;
+}
+
+
+
+.rd-mq-dropdown-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.rd-mq-dropdown-footer {
+  display: block;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.rd-mq-dropdown-footer .rd-mq-heading{
+  box-sizing: border-box;
+  cursor: pointer;
+  font-size: 1em;
+  height: 65px;
+  line-height: 65px;
+  overflow: hidden;
+  position: relative;
+  text-overflow: ellipsis;
+  text-transform: capitalize;
+  white-space: nowrap;
+  width: 100%;
+}
+
+.rd-mq-dropdown-footer .rd-mq-heading::after {
+  cursor: pointer;
+  content: '\E5CF';
+  font-family: 'Material Icons';
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.rd-mq-dropdown-footer input {
+  cursor: pointer;
+  height: 65px;
+  margin: 0;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+.rd-mq-dropdown-footer input:checked + .rd-mq-content-down {
+  display: block;
+}
+
+.rd-mq-content-down {
+  display: none;
+  padding-right: 30px;c
+}
+
+.rd-mq-content-down p {
+  padding-bottom: 30px;
+}
+
+.rd-mq-content-down .crd-mq-calendar {
+  display: flex;
+  flex-direction: column;
+}
+
+.rd-mq-content-down .rd-mq-calendar .rd-mq-calendar-item{
+  border-bottom: 1px solid #fff;
+  display: flex;
+  flex-direction: row;
+  height: 50px;
+  line-height: 50px;
+  justify-content: space-between;
+  opacity: 0.8;
+}
+
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width:320px) {
+  .rd-mq-footer {
+    background-color: #448aff;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .rd-mq-footer {
+    background-color: #6600cc;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .rd-mq-footer {
+    background-color: #ff6600;
+  }
+
+  .rd-mq-dropdown-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .rd-mq-dropdown-footer {
+    width: 50%;
+  }
+
+  .rd-mq-dropdown-footer .heading::after {
+    content: '';
+  }
+
+  .rd-mq-content-down {
+    display: block;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+  .rd-mq-footer {
+    background-color: #e91e63;
+  }
+
+  .rd-mq-dropdown-footer {
+    width: 25%;
+  }
+}
+
+
