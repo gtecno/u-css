@@ -43,6 +43,7 @@
   color: #fff;
   font-size: 3em;
   font-weight: 100;
+  }
 
 .rd-mq-discount-content .rd-mq-discount-button{
     background-color: #448aff;
@@ -57,7 +58,6 @@
     width: 300px;
     text-transform: uppercase;
     margin: 3%;
-  }
 }
 
 /* Small devices (landscape phones, 576px and up) */
