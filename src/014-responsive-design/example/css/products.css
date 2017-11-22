@@ -1,17 +1,22 @@
 /* Practice Responsive Design and Media Queries */
-
-
+/* ============================================ */
+/*                        Products              */
+/* ============================================ */
 
 .rd-mq-products {
- display: flex;
- flex-direction: column;
+    display: flex;
+    flex-direction: column;
 }
 
 
 .rd-mq-products-thumbs {
- display: flex;
- flex-direction: column;
- order: 2;
+    display: flex;
+    flex-direction: column;
+    order: 2;
+}
+
+.rd-mq-products-thumbs:hover {
+    opacity: 0.5
 }
 
 .rd-mq-products-thumbs > a:not(:last-child) {
@@ -19,29 +24,29 @@
 }
 
 .rd-mq-products-slider {
-  order: 1;
+    order: 1;
 }
 
 .rd-mq-products-slider > img {
-  width: 100%;
+    width: 100%;
 }
 
 
 .rd-mq-products-description{
-  order: 3;
-  padding: 40px 0;
+    order: 3;
+    padding: 40px 0;
 }
 
 .rd-mq-products-description h1,
 .rd-mq-products-description h2,
 .rd-mq-products-description h3{
-  color: #000;
-  font-size: 2.2em;
+    color: #000;
+    font-size: 2.2em;
 }
 
  .rd-mq-products-description h2,
  .rd-mq-products-description h3{
-   display: inline-block;
+    display: inline-block;
  }
 
 .rd-mq-products-description > h3:hover{
@@ -51,7 +56,7 @@
 
 
 .rd-mq-products-description del {
-  opacity: 0.4;
+    opacity: 0.4;
 }
 
 
@@ -65,23 +70,23 @@
     font-weight: 100;
     letter-spacing: .02em;
     margin-top: 40px;
+    text-align : justify;
 }
 
 
 /* Small devices (320px and up)  */
 @media (min-width: 320px) {
   .rd-mq-products-thumbs {
-
-           flex-direction: row;
-           padding-right: 10px;
+     flex-direction: row;
+     padding-right: 10px;
       }
 }
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
      .rd-mq-products-thumbs {
-          flex-direction: row;
-          padding-right: 10px;
+      flex-direction: row;
+      padding-right: 10px;
      }
 }
 
@@ -92,9 +97,9 @@
     }
 
    .rd-mq-products-thumbs {
-     flex-direction: column;
-     order: 1;
-     padding-right: 10px;
+      flex-direction: column;
+      order: 1;
+      padding-right: 10px;
      }
 
     .rd-mq-products-slider {
