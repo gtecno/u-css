@@ -218,16 +218,16 @@ main,
 }
 
 /* Tablets */
-@media (max-width: 800px) {
+@media screen and (max-width: 768px) {
 
     .fl-footer-wrapper {
       display: inline;
-      width: 100%
     }
 
    .fl-footer-wrapper .fl-footer-container {
-
+      width: 100%;
       margin-top: 10px;
+
       padding: 5px;
       text-align: center;
   }
