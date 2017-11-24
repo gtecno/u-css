@@ -6,14 +6,17 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width">
 
-    <!-- Ignore this, it's for the header --> 
+    <!-- Ignore this, it's for the header -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
     <link href="../../app.css" rel="stylesheet" type="text/css">
 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+
     <!-- Import App Css file -->
-    <link href="./example.css" rel="stylesheet" type="text/css">
-    
+    <link href="./css/reset.css" rel="stylesheet" type="text/css">
+    <link href="./css/example.css" rel="stylesheet" type="text/css">
+
   </head>
   <body>
   	<!-- Always shows a header, even in smaller screens. -->
@@ -32,9 +35,180 @@
       <main class="mdl-layout__content">
         <div class="page-content">
          <!-- Practice Content Goes Here -->
+
+          <section class="btp-container">
+            <div class="jumbotron jumbotron-fluid">
+              <div class="btp-container">
+                <h1 class="btp-header-title">Talos Travel</h1>
+                <p class="btp-header-sub-title">Travel is the only thing you by that makes you richer</p>
+              </div>
+            </div>
+
+
+            <nav class="navbar navbar-toggleable-md navbar-light bg-faded">
+              <button class="navbar-toggler
+                             navbar-toggler-right"
+                      type="button"
+                      data-toggle="collapse"
+                      data-target="#navbarSupportedContent"
+                      aria-controls="navbarSupportedContent"
+                      aria-expanded="false"
+                      aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+
+              <a class="navbar-brand" href="#">Navbar</a>
+
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">About Us</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Contact Us</a>
+                  </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                  <input class="form-control mr-sm-2" type="text" placeholder="Search">
+                  <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </form>
+              </div>
+            </nav>
+
+            <div class="row">
+             <div class="col-md-4">
+                   <!--first card-->
+                  <div class="card btp-card-margins">
+                    <div class="card-block">
+                      <h3> What are you looking?</h3>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item">
+                        <img class="float-left" src="./images/thumbnails/tech.jpeg" alt="">
+                        <div class="float-left btp-block">
+                          <p>Technology</p>
+                          <a href="#" class="card-link">Click!</a>
+                        </div>
+                      </li>
+                      <li class="list-group-item">
+                        <img class="float-left" src="./images/thumbnails/arch.jpeg" alt="">
+                        <div class="float-left btp-block">
+                          <p>Architecture</p>
+                          <a href="#" class="card-link">Click!</a>
+                        </div>
+                      </li>
+                      <li class="list-group-item">
+                        <img class="float-left" src="./images/thumbnails/people.jpeg" alt="">
+                        <div class="float-left btp-block">
+                          <p>People</p>
+                          <a href="#" class="card-link">Click!</a>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                   <!--second card-->
+                  <div class="card btp-card-margins">
+                    <div class="card-block">
+                      <h3> Buy with us?</h3>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item list-option">
+                          <button type="button" class="btn btn-secondary btp-btn-list-options">Flights</button>
+                      </li>
+                      <li class="list-group-item list-option">
+                        <button type="button" class="btn btn-secondary btp-btn-list-options">Cars</button>
+                      </li>
+                      <li class="list-group-item list-option">
+                        <button type="button" class="btn btn-secondary btp-btn-list-options">Hotels</button>
+                      </li>
+                    </ul>
+                    <div class="card-block">
+                      <a href="#" class="card-link">Flights + Hotels</a>
+                      <a href="#" class="card-link float-right">Hotels + Cars</a>
+                    </div>
+                  </div>
+                   <!--third card-->
+                  <div class="card btp-card-margins">
+                    <div class="card-header">
+                      Are you searching some promotions?
+                    </div>
+                    <div class="card-block">
+                      <p>Let us show you some special prices for today.</p>
+                      <button class="btn btn-warning float-right btn-sm btp-btn-position ">Find Promotions!</button>
+                    </div>
+                  </div>
+                   <!--fourth card-->
+                  <div class="card">
+                    <div class="card-header">
+                      Searching for something in particular?
+                    </div>
+                    <div class="card-block">
+                      <input class="form-control mr-sm-2" type="text" placeholder="Search...">
+                      <button class="btn btn-warning float-right btn-sm btp-btn-position ">Search!</button>
+                    </div>
+                  </div>
+             </div>
+
+
+               <!--Images group-->
+              <div class="col-md-8">
+                <div class="card-group">
+                  <!--first image-->
+                  <div class="card btp-img-card ">
+                  <img class="card-img-top" src="./images/cards/arch.jpeg" alt="Card image cap">
+                    <div class="card-footer btp-card-footer">
+                      <spam class="text-muted">
+                        Enrich Your Knowledge
+                        <button class="btn btn-warning btn-sm float-right"> GO! </button>
+                      </spam>
+                    </div>
+                  </div>
+
+                  <!--second image-->
+                  <div class="card btp-img-card">
+                    <img class="card-img-top" src="./images/cards/nature.jpeg" alt="Card image cap">
+                    <div class="card-footer btp-card-footer">
+                      <spam class="text-muted">
+                        Be One With Nature
+                        <button class="btn btn-warning btn-sm float-right"> GO! </button>
+                      </spam>
+                    </div>
+                  </div>
+
+                  <!--third image-->
+                  <div class="card btp-img-card">
+                    <img class="card-img-top" src="./images/cards/people.jpeg" alt="Card image cap">
+                    <div class="card-footer btp-card-footer">
+                      <spam class="text-muted">
+                        Recommended Places
+                        <button class="btn btn-warning btn-sm float-right"> GO! </button>
+                      </spam>
+                    </div>
+                  </div>
+
+                  <!--fourth image-->
+                  <div class="card btp-img-card">
+                    <img class="card-img-top" src="./images/cards/animals.jpeg" alt="Card image cap">
+                    <div class="card-footer btp-card-footer">
+                      <spam class="text-muted">
+                        Pet Friendly Places
+                        <button class="btn btn-warning btn-sm float-right"> GO! </button>
+                      </spam>
+                    </div>
+                  </div>
+                </div>
+             </div>
+          </section>
         </div>
       </main>
     </div>
 
+    <!-- jQuery first, then Tether, then Bootstrap JS. -->
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
   </body>
 </html>
