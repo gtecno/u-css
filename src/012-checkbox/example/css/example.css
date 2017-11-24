@@ -111,6 +111,9 @@ html {
 
 .ch-rb-control-position {
   position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   top: 2px;
   left: 0;
   width: 20px;
@@ -140,15 +143,11 @@ html {
 .ch-rb-form-checkbox .ch-rb-control-position:after {
   content: "\2713 ";
   color: white;
-  padding: 0 4px 7px 4px;
-  margin-top: -2px;
 }
 
 .ch-rb-form-radio-button .ch-rb-control-position:after {
-  zoom : 2;
   content: "\2022 ";
   color: white;
-  margin: -8px 2px;
 }
 
 .ch-rb-form-label-input input:disabled ~ .ch-rb-control-position {
