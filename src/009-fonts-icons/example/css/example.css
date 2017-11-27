@@ -46,7 +46,7 @@
 html, body {
   background-color: #D36E65;
   color: #FFF;
-  font-family: sans-serif;
+  font-family: "raleway-thin",sans-serif;
   font-size: 14px;
   font-weight: 100;
   line-height: 1.3;
@@ -64,17 +64,14 @@ p::first-letter {
 .fi-title {
   font-size: 2em;
   line-height: 2.5;
-  font-family: 'raleway-thin'
 }
 
-
-
 .fi-wrapper-page-content{
-position: relative;
+  position: relative;
 }
 
 /** Block light blue **/
-.fi-wrapper-one-block-lightblue {
+.fi-lightblue-block {
   background-color: #76C4D1;
   box-sizing: border-box;
   margin: 5%;
@@ -84,17 +81,17 @@ position: relative;
 }
 
 .fi-wrapper-content-first {
-  padding-left: 5%;
-  width: 60%;
+   padding-left: 5%;
+   width: 60%;
 }
 
 .fi-wrapper-content-two .fi-wrapper-content-three {
-  width: 60%;
+   width: 60%;
 }
 
 .fi-wrapper-content-first .fi-wrapper-content-tittle {
-  font-size: 3em;
-  font-family: 'raleway-bold';
+   font-size: 3em;
+   font-family: 'raleway-bold';
 }
 
 .fi-wrapper-content-first .fi-icons-font-awesome{
@@ -102,19 +99,19 @@ position: relative;
    margin-right: 15px;
 }
 
-.fi-wrapper-content-two-section{
- margin-right: 100px;
+.fi-wrapper-two-section{
+   margin-right: 100px;
 
 }
-.fi-wrapper-content-two-section p{
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  padding: 5% 0;
-  border-bottom: 1px solid #E72840;
+.fi-wrapper-two-section p{
+   text-transform: uppercase;
+   letter-spacing: 1px;
+   padding: 5% 0;
+   border-bottom: 1px solid #E72840;
 }
 
-.fi-wrapper-content-two-section .fi-input-text-search{
-   width: 300px;
+.fi-wrapper-two-section .fi-input-search{
+   width: 200px;
    height: 30px;
    position: relative;
    padding: 0;
@@ -123,8 +120,8 @@ position: relative;
    color: black;
    border-radius: 5px;
 }
-.fi-wrapper-content-two-section .fi-input-text-search input {
-  width: 100%;
+.fi-wrapper-two-section .fi-input-search input {
+   width: 100%;
    height: 100%;
    margin: 0;
    padding: 0 0 0 40px;
@@ -132,24 +129,24 @@ position: relative;
    border: none;
    border-radius: 5px;
 }
-.fi-wrapper-content-two-section .fi-input-text-search i {
-    position: absolute;
-    top: 3px;
-    left: 10px;
-    width: 10px;
-    height: 10px;
+.fi-wrapper-two-section .fi-input-search i {
+   position: absolute;
+   top: 3px;
+   left: 10px;
+   width: 10px;
+   height: 10px;
 }
 
-.fi-wrapper-content-three-block-section {
-   background-color: rgba(255, 255, 255, 0.7);;
-   padding: 1% 1% 1% 10%;
+.fi-wrapper-three-block {
+   background-color: rgba(255, 255, 255, 0.6);
+   padding: 1% 5% 5% 10%;
    margin-left: -10%;
-   margin-right: 100px;
+   margin-right: 10%;
    color: black;
 }
 
 /** Block light gray z index: value 1 **/
-.fi-wrapper-two-block-lightgray {
+.fi-lightgray-block{
   background-color: rgba(102, 123, 134, 0.3);
   position: fixed;
   right: 0;
@@ -161,7 +158,7 @@ position: relative;
 }
 
 /** Block yellow z index: value 2 **/
-.fi-wrapper-three-block-yellow {
+.fi-yellow-block {
   background-color: #DFE180;
   box-sizing: border-box;
   color: #8C8D57;
@@ -176,38 +173,60 @@ position: relative;
 }
 
 
-.fi-wrapper-three-block-yellow  .fi-title-list {
+.fi-yellow-block  .fi-title-list {
   font-size: 25px;
   padding-bottom: 5%;
 }
 
-.fi-wrapper-three-block-yellow ul {
+.fi-yellow-block ul {
    margin:0;
    padding:0;
 }
 
-.fi-wrapper-three-block-yellow li {
+.fi-yellow-block li {
   padding: 2% 0;
   font-weight: 100;
 }
 
-.fi-wrapper-three-block-yellow li:before {
- content: "\27BA ";
+.fi-yellow-block li:before {
+  content: "\27BA ";
   padding-right: 8px;
 }
 
-.fi-wrapper-three-block-yellow li::after {
-   counter-increment: section;
-   content: " " counters(section,".");
+.fi-yellow-block li::after {
+  counter-increment: section;
+  content: " " counters(section,".");
  }
 
-
-.fi-wrapper-three-block-yellow li:nth-child(2n+3)::after {
-    content: "- using 'em' ";
-    font-family: 'raleway-thin';
+.fi-yellow-block li:nth-child(2n+3)::after {
+  content: "- using 'em' ";
+  font-family: 'raleway-thin';
 }
 
-.fi-wrapper-three-block-yellow li:nth-child(even)::after {
-    content: "- using 'pt' ";
-    font-family: 'raleway-bold';
+.fi-yellow-block li:nth-child(even)::after {
+  content: "- using 'pt' ";
+  font-family: 'raleway-bold';
+}
+
+
+
+/*  MOBILE STYLES
+   ============================= */
+@media (max-width: 640px) {
+    .fi-lightgray-block {
+        display: none;
+    }
+
+    .fi-yellow-block,
+    .fi-wrapper-content-first,
+    .fi-wrapper-content-first .fi-wrapper-content-tittle {
+        margin: 0;
+        line-height: 1.5;
+        width: 100%;
+    }
+
+    .fi-yellow-block {
+        position: relative;
+        right: 0;
+    }
 }
