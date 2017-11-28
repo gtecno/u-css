@@ -41,69 +41,73 @@ html {
 
 
 /**Create a list of cards, this cards are going to be initial rotateY 30deg and hover will rotateY 0deg.**/
-.tta-list-animals-cards{
+.tta-list-animals-cards {
    width: 100%;
    float: left;
    background-color: #c8c8c8;
    box-sizing: border-box;
-   padding: 25px 20px;
+   padding: 15px;
 }
 
+.tta-list-animals-cards img {
+  float: left;
+  margin: 0 10px 0 0;
+  width: 300px;
+}
 
 .tta-list-animals-cards ul{
-   list-style:none;
-   margin: 15px 50px 0;
-   height: 500px;
+   display: flex;
+   justify-content: space-around;
+   list-style: none;
+   margin: 15px auto;
+   height: 550px;
 }
 
 .tta-list-animals-cards ul li {
   display: inline;
   float:left;
-  perspective: 500px;
+  -webkit-perspective: 500;
 }
-
 
 .tta-list-animals-cards li img {
-   float: left;
-   margin-right:15px;
-   width: 300px;
    border:10px solid #fff;
-   transform: rotateY(30deg);
-   box-shadow:0 6px 12px #888;
-   transition: transform 1s;
-   margin-top: 15px;
-
+   -webkit-transform: rotateY(30deg);
+   -webkit-box-shadow:0 6px 12px #888;
+   -webkit-transition-property: transform;
+   -webkit-transition-duration: 0.5s;
 }
-
 
 .tta-animal-card-info {
    width: 240px;
    height: 180px;
-   background-color: #cecccc;
+   -moz-box-shadow:0 20px 40px #888;
+   -webkit-box-shadow:0 20px 40px #888;
+   background-color: #deddcd;
    border: 10px solid #fff;
-   transform: rotateY(30deg);
-   transition: transform 1s;
    position: absolute;
-   bottom: 0;
+   bottom: 130px;
    padding: 10px;
    margin: 50px 45px 0 50px;
+   -webkit-transform: translateZ(30px) rotateY(30deg);
+   -webkit-transition-property: transform, box-shadow, margin;
+   -webkit-transition-duration: 0.5s;
 }
 
-.tta-animal-card-info h3{
+.tta-animal-card-info h3 {
   color: #6b0707;
-  font-size:1.2em;
-   font-family:Times;
+  font-size: 1.2em;
+  font-family:Georgia,serif,Times;
   text-align: center;
   padding-bottom: 20px;
 }
 
-.tta-animal-card-info p{
+.tta-animal-card-info p {
    padding: 10px 10px 30px 10px;
    color:#6d6c6c;
    text-align: justify;
 }
 
-.tta-animal-card-info a{
+.tta-animal-card-info a {
    background-color: #6b0707;
    color: #fff;
    text-align: center;
@@ -118,11 +122,11 @@ html {
 
 .tta-list-animals-cards li:hover img,
 .tta-list-animals-cards li:hover .tta-animal-card-info {
-     transform: rotateY(0deg);
+   transform: rotateY(0deg);
 }
 
 .tta-list-animals-cards li:hover .tta-animal-card-info {
-       margin: 0 0 0 20px;
+   margin: 0 0 0 20px;
 }
 
 
@@ -132,28 +136,28 @@ html {
 .tta-notes-wrapper {
    width: 850px;
    float: left;
-   background-color: #ede8e8;
 }
 
 .tta-notes-wrapper ul {
-  list-style-type: none;
-  padding: 30px;
-  margin-right: 20px;
-}
-
+   list-style-type: none;
+   padding: 50px;
+   margin-right: 10px;
+ }
 
 .tta-notes-wrapper ul li {
-  display: inline;
   float:left;
 }
 
-.tta-notes-wrapper ul li div{
+.tta-notes-wrapper ul li div {
   display: block;
   height: 150px;
   width: 150px;
-  box-shadow: 12px 12px 10px 0px rgba(0,0,0,0.7);
+  box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.6);
   padding: 15px;
-  margin: 20px;
+  margin: 15px;
+  -moz-transition:-moz-transform .15s linear;
+  -o-transition:-o-transform .15s linear;
+  -webkit-transition:-webkit-transform .15s linear;
 }
 
 .tta-notes-wrapper ul li:nth-child(odd)  div{
@@ -173,15 +177,22 @@ html {
   padding-bottom: 15px;
 }
 
- .tta-notes-wrapper ul li div p{
+.tta-notes-wrapper ul li div p{
   color: #000;
   font-size: 1.4em;
   font-weight: normal;
 }
 
-
-.tta-notes-wrapper ul li div:hover{
- transform: scale(1.25)
+.tta-notes-wrapper ul li div:hover,
+.tta-notes-wrapper ul li div:focus {
+  box-shadow:10px 10px 7px rgba(0,0,0,.7);
+  -moz-box-shadow:10px 10px 7px rgba(0,0,0,.7);
+  -webkit-box-shadow: 10px 10px 7px rgba(0,0,0,.7);
+  -webkit-transform: scale(1.25);
+  -moz--transform: scale(1.25);
+  animation: notas 2s ease-in-out forwards;
+  position:relative;
+  z-index:5;
 }
 
 
@@ -192,14 +203,15 @@ html {
   width: 350px;
   height: 700px;
   padding: 15px;
-  background-color: #fff;
+  background-color: #ede8e8;
   box-sizing: border-box;
   text-align: center;
 }
 
 .tta-buttons-animations button {
-  background: #64bbd1;
-  box-shadow: 0px 8px 5px #275873;
+  box-shadow: 0px 10px 14px -7px #275873;
+  background: linear-gradient(to bottom, #55c4e6 5%, #0babe0 100%);
+  background-color: #55c4e6;
   font-size: 1.3em;
   font-weight: bold;
   color: #fff;
@@ -210,11 +222,11 @@ html {
 }
 
 .tta-buttons-animations ul li:nth-child(odd) button:hover {
- animation: buttons-scale 2s ease-in-out forwards;
+  animation: buttons-scale 2s ease-in-out forwards;
 }
 
 .tta-buttons-animations ul li:nth-child(even) button:hover {
- animation: buttons-scale2 2s ease-in-out forwards;
+  animation: buttons-scale2 2s ease-in-out forwards;
 }
 
 @keyframes buttons-scale {
@@ -239,4 +251,70 @@ html {
    80% {transform: scale(1.05,0.95);}
    90% {transform: scale(0.98,1.03);}
    95%,100% {transform: scale(0.95,1.05);}
+}
+
+@media (max-width: 426px) {
+  .tta-notes-wrapper ,
+  .tta-buttons-animations {
+    width: 100%;
+    height: 100%;
+  }
+
+
+  .tta-list-animals-cards ul{
+     display: inherit;
+     justify-content: normal;
+     flex-direction: column;
+     margin: 15px auto;
+     height: 550px;
+  }
+}
+
+
+@media only screen and (min-width: 426px) and (max-width: 1024px) {
+
+
+ .tta-list-animals-cards ul {
+    display: inherit;
+    flex-direction: column;
+    margin: 15px auto;
+    height: 550px;
+ }
+
+  .tta-animal-card-info {
+       bottom: 0;
+    }
+
+    .tta-buttons-animations {
+     width: 100%;
+    height: 100%;
+  }
+   .tta-notes-wrapper {
+    display:inline;
+    width: 100%;
+   }
+
+
+   .tta-notes-wrapper ul {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+     }
+}
+
+@media (min-width: 1025px) {
+   .tta-buttons-animation  {
+       width: 30%;
+     }
+
+  .tta-notes-wrapper {
+        width: 65%;
+        padding-right: 0;
+   }
+
+
+
+
+
+
 }
