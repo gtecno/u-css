@@ -1,0 +1,275 @@
+/* Practice: Flex */
+
+
+
+html,
+body,
+main,
+.page-content {
+  color: #787878;
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+}
+
+.fl-container {
+  margin: 0;
+  font-family: sans-serif;
+  font-size: 1em;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  position: relative;
+}
+
+
+.trash{
+  color: black;
+}
+
+.fl-main {
+  flex-grow: 2;
+  text-align: center;
+}
+
+.fl-header-wallpaper {
+  background: url("../images/background/image.jpg") no-repeat center -50% fixed;
+-webkit-background-size: 100% 100%;
+   -moz-background-size: 100% 100%;
+     -o-background-size: 100% 100%;
+        background-size: 100% 100%;
+  overflow: hidden;
+  position: relative;
+  height: 300px;
+  width: 100%;
+  z-index: -1;
+}
+
+
+.fl-wrap-card {
+  max-width: 1200px;
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: -70px;
+}
+
+.fl-wrap-card .fl-card{
+  width: 350px;
+  border: 2px solid #ddd;
+  border-radius: 6px;
+  margin: 16px 6px;
+  background-color: white;
+}
+
+.fl-wrap-card .fl-card:hover{
+  cursor: pointer;
+}
+
+.fl-img-container {
+  box-sizing: border-box;
+  border-radius: 6px 6px 0 0;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: 250px;
+}
+
+
+.fl-img-container img {
+  margin-bottom: 8px;
+  transition: all 0.5s;
+}
+
+.fl-img-container img:hover {
+-webkit-transform: scale(1.2);
+   -moz-transform: scale(1.2);
+        transform: scale(1.2);
+}
+
+
+.fl-card .fl-description {
+    padding: 8px;
+    text-align: justify;
+}
+
+.fl-card .fl-options-list {
+  display: flex;
+  justify-content: space-between;
+  height:40px;
+  border-top: 2px solid #ddd;
+  margin-top: 8px;
+}
+
+
+.fl-card .fl-options-list .fl-list,
+.fl-card .fl-options-list .fl-list-read-more {
+  padding: 7px;
+  margin: 4px;
+}
+
+.fl-card .fl-options-list .fl-list a {
+  color: #bbb;
+}
+
+
+.fl-card .fl-options-list .fl-list a:not(:last-child):after {
+   content: ",";
+}
+
+.fl-card .fl-options-list .fl-list-read-more {
+  display: left;
+}
+
+.fl-footer {
+  background-color: #9370DB;
+  min-height: 300px;
+}
+
+
+
+/**footer wrapper**/
+.fl-footer-wrapper {
+   display: inline-flex;
+   align-items: baseline;
+   color: white;
+   width: 100%;
+   font-size: 14px;;
+ }
+
+.fl-footer-wrapper .fl-footer-container {
+   width: 25%;
+   line-height: 20px;
+   box-sizing: border-box;
+   margin-top: 15px;
+   padding: 5px;
+ }
+
+
+.fl-footer-wrapper .fl-footer-container:first-child {
+  padding-left: 16px;
+}
+
+.fl-footer-wrapper .fl-footer-container:last-child p{
+  margin: 3px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.fl-footer-container h1 {
+  margin-bottom: 16px;
+  box-sizing: border-box;
+  line-height: 23.8px;
+  font-size: 20px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.fl-footer-container ul {
+    white-space: nowrap;
+}
+
+.fl-footer-container ul li {
+    padding-bottom: 8px;
+    border-bottom: 1px solid rgba(255,255,255,.1);
+}
+
+.fl-footer-container span {
+  float: right;
+}
+
+.fl-footer-img-box {
+  max-width: 350px;
+}
+
+.fl-footer-img-box  > img {
+  width: 80px;
+  height:80px;
+}
+
+
+
+
+/* Mobile 320 */
+@media only screen and (max-width: 320px){
+
+  .fl-wrap-card .fl-card {
+   width: 240px;
+   }
+
+  .fl-card .fl-options-list {
+    font-size: 12px;
+   }
+
+  .fl-footer-wrapper {
+     display: inline-block;
+   }
+
+  .fl-footer-wrapper .fl-footer-container {
+     width: 100%;
+     padding: 0 5px;
+     text-align: center;
+   }
+
+  .fl-footer-img-box {
+    width: 320px;
+   }
+
+  .fl-footer-img-box  > img {
+      width: 70px;
+      height:70px;
+   }
+
+
+
+}
+
+/* Tablets */
+@media only screen and (min-width: 321px) and (max-width: 780px) {
+
+    .fl-footer-wrapper {
+        display: inline;
+    }
+
+   .fl-footer-wrapper .fl-footer-container {
+      width: 100%;
+      margin-top: 10px;
+      padding: 5px;
+      text-align: center;
+    }
+
+    .fl-footer-img-box {
+        width: 340px;
+    }
+
+   .fl-small-sc{
+       display: inline-block;
+   }
+
+}
+
+
+@media only screen and (min-width: 781px) and (max-width: 1000px) {
+  .fl-footer-img-box {
+    width: 200px;
+   }
+
+  .fl-footer-img-box  > img {
+      width: 45px;
+      height:45px;
+   }
+}
+
+
+@media only screen and (min-width: 1001px)  and (max-width: 1200px){
+  .fl-footer-img-box  > img {
+      width: 55px;
+      height:55px;
+   }
+}
+
+
+@media only screen  and (min-width: 1201px){}
