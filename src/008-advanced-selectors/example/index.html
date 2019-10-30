@@ -2,18 +2,18 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>001 - Float Property</title>
+    <title>008 - Advanced Selector</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width">
 
-    <!-- Ignore this, it's for the header --> 
+    <!-- Ignore this, it's for the header -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
     <link href="../../app.css" rel="stylesheet" type="text/css">
 
     <!-- Import App Css file -->
-    <link href="./example.css" rel="stylesheet" type="text/css">
-    
+    <link href="./css/example.css" rel="stylesheet" type="text/css">
+
   </head>
   <body>
   	<!-- Always shows a header, even in smaller screens. -->
@@ -24,7 +24,7 @@
         </a>
         <div class="mdl-layout__header-row">
           <!-- Title -->
-          <span class="mdl-layout-title">001 - Float Property</span>
+          <span class="mdl-layout-title">008 - Advanced Selector</span>
           <!-- Add spacer, to align navigation to the right -->
           <div class="mdl-layout-spacer"></div>
         </div>
@@ -32,6 +32,188 @@
       <main class="mdl-layout__content">
         <div class="page-content">
          <!-- Practice Content Goes Here -->
+
+          <!-- Tittle for exercise-->
+          <header class="as-header">
+            <h1>Clothes</h1>
+          </header>
+
+
+          <section class="as-page-container">
+            <!--Nav and sub-menu-->
+          <aside>
+            <h2>Categories</h2>
+            <ul>
+              <li><a href="#">Blouses and top</a></li>
+              <li><a href="#">Cardigans and Kimonos</a></li>
+              <li><a href="#">Jackets</a></li>
+              <li><a href="#">Crop tops and bralettes</a></li>
+              <li><a href="#">Chanel skirt</a></li>
+              <li><a href="#">Skirts and shorts</a></li>
+              <li><a href="#">new collection</a></li>
+              <li><a href="#">Pants</a></li>
+              <li><a href="#">Clothes</a></li>
+              <li><a href="#">Coats</a></li>
+              <li><a href="#">Dresses</a></li>
+              <li><a href="#">Shoes</a></li>
+              <li><a href="#">Handbags</a></li>
+              <li><a href="#">Accessories</a></li>
+            </ul>
+
+            <h2>Change Currency</h2>
+            <ul class="as-list-currency">
+                <li><a href="#">COP</a></li>
+                <li><a href="#">USD</a></li>
+                <li><a href="#">EUR</a></li>
+                <li><a href="#">GBP</a></li>
+                <li><a href="#">JPY</a></li>
+                <li><a href="#">CHF</a></li>
+                <li><a href="#">MXN</a></li>
+            </ul>
+
+            <h2>Best Valored</h2>
+            <ul>
+                 <li class="as-best-valored">
+                   <img src="images/avatar1.jpg">
+                   <div>
+                     <a>White and blue cross skirt</a>
+                     <p> COP $72,000</p>
+                   </div>
+                 </li>
+
+                 <li class="as-best-valored">
+                   <img src="images/avatar2.jpg">
+                   <div>
+                     <a>Grape blonda Croptop</a>
+                     <p> COP $92,000</p>
+                   </div>
+                 </li>
+
+                 <li class="as-best-valored">
+                   <img src="images/avatar3.jpg">
+                   <div>
+                     <a>Short sleeve shirt with lace</a>
+                     <p> COP $132,000</p>
+                   </div>
+                 </li>
+
+                 <li class="as-best-valored">
+                <img src="images/avatar4.jpg">
+                <div>
+                  <a>White dress with lace gold</a>
+                  <p> COP $202,000</p>
+                </div>
+              </li>
+            </ul>
+          </aside>
+          <section>
+              <div class="as-top-section-list-result">
+                <span> Showing 1-9 of 100 results</span>
+                <div>
+                  <button><i class="material-icons mdl-list__item-icon">view_module</i></button>
+                  <button><i class="material-icons mdl-list__item-icon">view_list</i></button>
+                  <button><i class="material-icons mdl-list__item-icon">view_carousel</i></button>
+                  <button><i class="material-icons mdl-list__item-icon">view_week</i></button>
+                </div>
+              </div>
+              <section class="as-photo-model-images">
+                <article class="as-photo-model-image">
+                  <div class="as-photo-model-image-wrapper">
+                    <img src="images/card1.jpg" alt="">
+                  </div>
+                    <p>Dress</p>
+                    <p>COP $ 200.000</p>
+                    <i class="material-icons">add_shopping_cart</i>
+                    <div class="as-new-collection-label">New Colection</div>
+                </article>
+
+                <article class="as-photo-model-image">
+                  <div class="as-photo-model-image-wrapper">
+                    <img src="images/card2.jpg" alt="">
+                  </div>
+                    <p>Black Blouse</p>
+                    <p>COP $ 200.000</p>
+                    <i class="material-icons">add_shopping_cart</i>
+                </article>
+
+                <article class="as-photo-model-image">
+                  <div class="as-photo-model-image-wrapper">
+                    <img src="images/card3.jpg" alt="">
+                  </div>
+                    <p>Long sleeve blouse</p>
+                    <p>COP $ 200.000</p>
+                    <i class="material-icons">add_shopping_cart</i>
+                </article>
+
+                <article class="as-photo-model-image">
+                  <div class="as-photo-model-image-wrapper">
+                    <img src="images/card4.jpg" alt="">
+                  </div>
+                    <p>Dark Blue Dress</p>
+                    <p>COP $ 200.000</p>
+                    <i class="material-icons">add_shopping_cart</i>
+                  <div class="as-new-collection-label">New Colection</div>
+                </article>
+
+                <article class="as-photo-model-image">
+                  <div class="as-photo-model-image-wrapper">
+                    <img src="images/card5.jpg" alt="">
+                  </div>
+                    <p>White Cropt</p>
+                    <p>COP $ 200.000</p>
+                  <i class="material-icons">add_shopping_cart</i>
+                </article>
+
+                <article class="as-photo-model-image">
+                  <div class="as-photo-model-image-wrapper">
+                    <img src="images/card6.jpg" alt="">
+                  </div>
+                    <p>White Blouse</p>
+                    <p>COP $ 200.000</p>
+                    <i class="material-icons">add_shopping_cart</i>
+                </article>
+
+                <article class="as-photo-model-image">
+                  <div class="as-photo-model-image-wrapper">
+                    <img src="images/card7.jpg" alt="">
+                  </div>
+                  <p>Black Blouse</p>
+                  <p>COP $ 200.000</p>
+                  <i class="material-icons">add_shopping_cart</i>
+                  <div class="as-new-collection-label">New Colection</div>
+                </article>
+
+                <article class="as-photo-model-image">
+                  <div class="as-photo-model-image-wrapper">
+                    <img src="images/card8.jpg" alt="">
+                  </div>
+                  <p>Long sleeve blouse</p>
+                  <p>COP $ 200.000</p>
+                  <i class="material-icons">add_shopping_cart</i>
+                </article>
+
+                <article class="as-photo-model-image">
+                  <div class="as-photo-model-image-wrapper">
+                    <img src="images/card9.jpg" alt="">
+                  </div>
+                  <p>Dark Blue Dress</p>
+                  <p>COP $ 200.000</p>
+                  <i class="material-icons">add_shopping_cart</i>
+                  <div class="as-new-collection-label">New Colection</div>
+                </article>
+
+              </section>
+            <div class="as-top-section-list-result">
+              <span> Showing 1-9 of 100 results</span>
+            </div>
+
+          </section>
+          </section>
+
+          <footer>
+            <div> © 2017 All Rights Reserved. Powered by Talos Digital</div>
+          </footer>
+
         </div>
       </main>
     </div>

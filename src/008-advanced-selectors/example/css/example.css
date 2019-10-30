@@ -1,0 +1,243 @@
+/* Practice Layout */
+
+body,
+html {
+  color: #787878;
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+}
+
+/** Page containes**/
+.as-page-container {
+   margin: 0 auto;
+   max-width: 1200px;
+}
+
+.as-page-container > aside {
+  display: inline-block;
+  width: 20%;
+}
+
+.as-page-container > section {
+    display: inline-block;
+    vertical-align : top;
+    width: 70%;
+}
+
+/** header **/
+.as-header {
+  border-bottom: 2px solid #ebebeb;
+  color: #000;
+  font-size: 0.9em;
+  line-height: 100px;
+  height: 100px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+
+/*** Nav list Categories ***/
+
+h2 {
+  border-bottom: 2px outset #ebebeb;
+  font-size: 0.9em;
+  font-weight: normal;
+  letter-spacing: 2px;
+  line-height: 40px;
+  margin: 15px 0;
+  padding-bottom: 15px;
+  text-transform: uppercase;
+}
+
+h2 + ul {
+  list-style: none;
+}
+
+h2 + ul li:not(.as-best-valored) a {
+  color: inherit;
+  font-size: 0.9em;
+  text-decoration: none;
+}
+
+
+h2 + ul li:not(.as-best-valored) a:hover {
+  color: #fbc2d4;
+  cursor: pointer;
+}
+
+ /*** Nav list change currency ***/
+ .as-list-currency {
+     display: inline-block;
+     margin: 0 5px 5px 0;
+ }
+
+
+ .as-list-currency  li {
+     background-color: #ebebeb;
+     display: inline-block;
+     width: 45px;
+     margin: 5px;
+     padding: 3px 8px;
+     border: 1px solid #e6e6e6;
+     border-radius: 5px;
+ }
+
+ .as-list-currency li:first-child {
+     background-color: #000;
+     color: #fff;
+   }
+
+   .as-list-currency li a {
+     margin-left: 10px;
+   }
+
+
+/*** Nav list best valored ***/
+.as-best-valored img {
+    cursor: pointer;
+    float: left;
+    height: auto;
+    margin-right: 10px;
+    width: 70px;
+    -moz-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+
+}
+
+.as-best-valored:hover img  {
+  -moz-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.as-best-valored > div a{
+  color: inherit;
+  font-size: 0.9em;
+  line-height: 1.3em;
+  text-transform: capitalize;
+}
+
+.as-best-valored > div a:hover{
+  color: #fbc2d4;
+  cursor: pointer;
+}
+
+.as-best-valored > div p {
+  color: #9b9b9b;
+}
+
+.as-best-valored > div p::after {
+  content: ' Total price by all ';
+  font-size: 0.7em;
+}
+
+.as-best-valored > div p:hover {
+  color: #6c6c6c;
+  font-size: 1.2em;
+}
+
+
+
+/*** Main and principal content - images ***/
+
+.as-photo-model-images{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 15px;
+}
+
+.as-photo-model-image{
+  position: relative;
+}
+
+.as-photo-model-image p{
+    margin: auto;
+}
+
+.as-photo-model-image-wrapper {
+  box-sizing: border-box;
+  margin-right: 20px;
+  overflow: hidden;
+  height: 320px;
+  width: 240px;
+}
+
+.as-photo-model-image-wrapper img {
+  width: 100%;
+  max-width: 100%;
+  -moz-transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.as-photo-model-image-wrapper:hover img {
+  -moz-transform: scale(1.5);
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+}
+
+
+/***   List Result and Botton ***/
+.as-top-section-list-result {
+    line-height: 40px;
+     margin: 30px 5px;
+}
+
+.as-top-section-list-result span {
+     margin-left: 10px;
+}
+
+.as-top-section-list-result div {
+    float: right;
+}
+
+.as-top-section-list-result  button {
+    background-color: transparent;
+    border: 2px inset #ebebeb;
+    height: 40px;
+    width:  40px;
+    margin-left: 8px;
+}
+
+.as-top-section-list-result  button:first-child {
+    background-color: #000;
+}
+
+
+
+
+/** label new collection **/
+
+.as-new-collection-label{
+  background-color: #fbc2d4;
+  color: #fff;
+  font-size: 0.6em;
+  font-weight: 90;
+  line-height: 25px;
+  padding: 1px 8px;
+  position: absolute;
+  top: 12px;
+  text-decoration: none;
+  text-transform: uppercase;
+  width: 100px;
+}
+
+
+/** footer **/
+
+footer {
+  background-color: #787878;
+  color: #fff;
+  height: 60px;
+  line-height: 60px;
+  margin: 0 -20px -20px;
+  padding: 20px;
+}
+
+footer div {
+  margin: 0 auto;
+  max-width: 1200px;
+}
