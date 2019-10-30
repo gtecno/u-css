@@ -1,0 +1,149 @@
+/* Practice - Styling Buttons, links and lists */
+
+* {
+  margin: 0;
+}
+
+html, body, main, .page-content {
+  height: 100%;
+  padding: 0 !important;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #9b9b9b;
+}
+
+
+.sb-lyl-page-container {
+   min-height: 100%;
+}
+
+/* First exercise - Create a box with a background image and a centered title. */
+
+.sb-lyl-background-image {
+    background-image: url("../images/background.jpg");
+    height:100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+ }
+
+ .sb-lyl-background-image h1 {
+     background-color: #000;
+     color: #fff;
+     font-size: 30px;
+     line-height: 260px;
+     opacity: 0.4;
+     text-align: center;
+     text-transform: uppercase;
+   }
+
+/***  Second Exercise - Create a form with 4 fields, a button and a description text. The button needs to have a hover.  ***/
+.sb-lyl-form-contact-us {
+  margin: 0 auto;
+  padding: 20px;
+  width: 500px;
+}
+
+.sb-lyl-input {
+  background-color: #eee;
+  border:0;
+  box-sizing: border-box;
+  color: #444;
+  display: block;
+  font-size: 15px;
+  line-height: 1.5em;
+  margin-bottom: 20px;
+  padding: 10px;
+  width: 100%;
+}
+
+.sb-lyl-input:focus {
+  outline: 0;
+  border: 1px solid darkgray;
+}
+
+textarea {
+    resize: none;
+}
+
+
+.sb-lyl-button {
+  background-color: #fbc2d4;
+  border: 1px;
+  color: #fff;
+  display: block;
+  font-size: 15px;
+  height: 50px;
+  margin-bottom: 24px;
+  text-align: center;
+  text-transform: uppercase;
+  width: 160px;
+}
+
+.sb-lyl-button:hover {
+  background-color: #fff;
+  color: #fbc2d4;
+  border: 1px solid #fbc2d4;
+}
+
+
+/**** Third Exercise - Create a footer with 3 boxes of items list. ***/
+
+
+.sb-lyl-site-footer {
+    background-color: #fbc2d4;
+    margin: 25px 0 0 0;
+ }
+
+
+ .sb-lyl-box{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.sb-lyl-box-footer{
+  color: #fff;
+  font-size: 15px;
+  margin: 40px;
+  min-width: 250px;
+}
+
+.sb-lyl-box-footer .title {
+  border-bottom: 1px solid #fff;
+  letter-spacing: 2px;
+  margin-bottom: 25px;
+  padding-bottom: 25px;
+  text-transform: uppercase;
+}
+
+.sb-lyl-box-footer ul li {
+  padding-bottom: 15px;
+}
+
+.sb-lyl-box-footer ul li a {
+  color: #fff;
+  font-weight: 100;
+  text-decoration: none;
+}
+
+.sb-lyl-box-footer ul li a:hover {
+  color: #000;
+  font-weight: 120;
+}
+
+@media (max-width: 1200px) {
+  .sb-lyl-form-contact-us{
+    width: 80% !important;
+  }
+}
+
+@media (max-width: 500px) {
+  .sb-lyl-form-contact-us div {
+    width: 100%;
+  }
+}
+
+}
